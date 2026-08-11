@@ -5,9 +5,9 @@ This repository contains a lightweight public data package for the paper:
 **The Priced Dimensions of Asymmetric Risk**  
 Matej Nevrla
 
-The release is designed for researchers who want to use the paper's two main
-public factor return panels without accessing the underlying stock-level
-databases.
+The release is designed for researchers who want to use the paper's public
+factor return panels and the aggregate ARM implementation returns without
+accessing the underlying stock-level databases.
 
 ## Contents
 
@@ -18,6 +18,7 @@ that month.
 | --- | --- |
 | `data/arm_pca_returns_wide.csv` | Full-sample covariance-PCA portfolio returns for PC1-PC10 in wide format. |
 | `data/arm_basis_returns.csv` | Returns for the three pre-specified ARM basis factors. |
+| `data/arm_portfolio_returns_long.csv` | Monthly returns for the 150 underlying ARM implementations in long format. |
 
 The monthly sample covers January 1968 through December 2024.
 
@@ -28,6 +29,7 @@ In R:
 ```r
 pca <- read.csv("data/arm_pca_returns_wide.csv")
 arm_basis <- read.csv("data/arm_basis_returns.csv")
+arm_portfolios <- read.csv("data/arm_portfolio_returns_long.csv")
 ```
 
 In Python:
@@ -37,12 +39,14 @@ import pandas as pd
 
 pca = pd.read_csv("data/arm_pca_returns_wide.csv")
 arm_basis = pd.read_csv("data/arm_basis_returns.csv")
+arm_portfolios = pd.read_csv("data/arm_portfolio_returns_long.csv")
 ```
 
 ## ARM Families
 
 The PCA and ARM basis factors are constructed from 150 ARM implementations: five
-ARM families combined with 30 implementation choices.
+ARM families combined with 30 implementation choices. The 150 implementation
+returns are provided in `data/arm_portfolio_returns_long.csv`.
 
 | `variable` | Description |
 | --- | --- |
