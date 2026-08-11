@@ -80,5 +80,5 @@ used to construct the factors.
 
 ## License
 
-No formal license has been selected yet. Before broad reuse, please confirm the
-terms under which the aggregate data are distributed.
+This public data release is licensed under the Creative Commons Attribution 4.0
+International License (CC BY 4.0). See `LICENSE`.

@@ -8,4 +8,5 @@ authors:
 repository-code: "https://github.com/matejnevrla/priced-dimensions-asymmetric-risk"
 date-released: "2026-08-11"
 version: "0.1.0"
+license: "CC-BY-4.0"
 abstract: "Monthly PCA portfolio returns and pre-specified asymmetric-risk-managed basis factor returns used in The Priced Dimensions of Asymmetric Risk."
